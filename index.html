@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Connecta - ربط العالم معاً</title>
+    <meta name="description" content="Connecta - منصة تواصل اجتماعي متقدمة تربط العالم معاً. تجربة تفاعلية حديثة مع ميزات متطورة.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="floating">
+                <h1 class="text-5xl font-bold mb-4">
+                    <i class="fas fa-link text-yellow-300"></i>
+                    ✨ Connecta
+                </h1>
+            </div>
+            <p class="text-xl mb-8 opacity-90">منصة التواصل الاجتماعي المتقدمة التي تربط العالم معاً</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#features" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-rocket mr-2"></i>
+                    اكتشف المميزات
+                </a>
+                <a href="https://github.com/MohamedFathi00/connecta" target="_blank" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                    <i class="fab fa-github mr-2"></i>
+                    عرض الكود
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="card-hover p-6">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">132+</div>
+                    <div class="text-gray-600">ملفات برمجية</div>
+                </div>
+                <div class="card-hover p-6">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">10+</div>
+                    <div class="text-gray-600">تقنيات حديثة</div>
+                </div>
+                <div class="card-hover p-6">
+                    <div class="text-3xl font-bold text-green-600 mb-2">100%</div>
+                    <div class="text-gray-600">مفتوح المصدر</div>
+                </div>
+                <div class="card-hover p-6">
+                    <div class="text-3xl font-bold text-red-600 mb-2">∞</div>
+                    <div class="text-gray-600">إمكانيات لا محدودة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">🌟 مميزات Connecta</h2>
+                <p class="text-xl text-gray-600">تجربة تواصل اجتماعي لا مثيل لها</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 class="text-xl font-semibold mb-3">رسائل فورية</h3>
+                    <p class="text-gray-600">تواصل مع أصدقائك في الوقت الفعلي باستخدام Socket.io</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-4xl mb-4">📹</div>
+                    <h3 class="text-xl font-semibold mb-3">بث مباشر</h3>
+                    <p class="text-gray-600">شارك لحظاتك مع العالم من خلال البث المباشر التفاعلي</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold mb-3">تصميم حديث</h3>
+                    <p class="text-gray-600">واجهة مستخدم عصرية مبنية بـ React و Tailwind CSS</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-semibold mb-3">أمان متقدم</h3>
+                    <p class="text-gray-600">حماية عالية للبيانات مع تشفير متطور</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold mb-3">متوافق مع الجوال</h3>
+                    <p class="text-gray-600">تجربة سلسة على جميع الأجهزة والشاشات</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold mb-3">أداء فائق</h3>
+                    <p class="text-gray-600">سرعة عالية وتحميل سريع باستخدام أحدث التقنيات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">🛠️ التقنيات المستخدمة</h2>
+                <p class="text-xl text-gray-600">أحدث وأقوى التقنيات في السوق</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
+                <div class="p-4 card-hover">
+                    <i class="fab fa-react text-5xl text-blue-500 mb-3"></i>
+                    <div class="font-semibold">React 18</div>
+                </div>
+                <div class="p-4 card-hover">
+                    <i class="fab fa-node-js text-5xl text-green-500 mb-3"></i>
+                    <div class="font-semibold">Node.js</div>
+                </div>
+                <div class="p-4 card-hover">
+                    <i class="fas fa-database text-5xl text-purple-500 mb-3"></i>
+                    <div class="font-semibold">PostgreSQL</div>
+                </div>
+                <div class="p-4 card-hover">
+                    <i class="fab fa-docker text-5xl text-blue-600 mb-3"></i>
+                    <div class="font-semibold">Docker</div>
+                </div>
+                <div class="p-4 card-hover">
+                    <i class="fas fa-bolt text-5xl text-yellow-500 mb-3"></i>
+                    <div class="font-semibold">Socket.io</div>
+                </div>
+                <div class="p-4 card-hover">
+                    <i class="fab fa-css3-alt text-5xl text-blue-400 mb-3"></i>
+                    <div class="font-semibold">Tailwind</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">🚀 جاهز لتجربة Connecta؟</h2>
+            <p class="text-xl mb-8 opacity-90">ابدأ رحلتك في عالم التواصل الاجتماعي المتطور</p>
+            
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="https://github.com/MohamedFathi00/connecta" target="_blank" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <i class="fab fa-github mr-2"></i>
+                    عرض الكود على GitHub
+                </a>
+                <a href="https://github.com/MohamedFathi00/connecta/releases" target="_blank" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                    <i class="fas fa-download mr-2"></i>
+                    تحميل الإصدار الأخير
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">✨ Connecta</h3>
+                    <p class="text-gray-300">منصة تواصل اجتماعي متقدمة مفتوحة المصدر تهدف لربط العالم معاً</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">روابط مهمة</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://github.com/MohamedFathi00/connecta" target="_blank" class="hover:text-white transition">GitHub Repository</a></li>
+                        <li><a href="https://github.com/MohamedFathi00/connecta/issues" target="_blank" class="hover:text-white transition">Report Issues</a></li>
+                        <li><a href="https://github.com/MohamedFathi00/connecta/wiki" target="_blank" class="hover:text-white transition">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">تواصل معنا</h4>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/MohamedFathi00" target="_blank" class="text-2xl hover:text-purple-400 transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-2xl hover:text-blue-400 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-2xl hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Connecta. جميع الحقوق محفوظة. مفتوح المصدر بموجب رخصة MIT.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
