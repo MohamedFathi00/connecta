@@ -1,7 +1,7 @@
 {
-  "name": "social-media-platform",
+  "name": "connecta",
   "version": "1.0.0",
-  "description": "🌟 منصة تواصل اجتماعي متقدمة مبنية بأحدث التقنيات",
+  "description": "✨ Connecta - منصة تواصل اجتماعي متقدمة تربط العالم معاً",
   "keywords": [
     "social-media",
     "react",
@@ -12,7 +12,7 @@
     "progressive-web-app",
     "modern-ui"
   ],
-  "author": "Social Media Platform Team",
+  "author": "Connecta Team",
   "license": "MIT",
   "homepage": "https://github.com/yourusername/social-media-platform#readme",
   "repository": {

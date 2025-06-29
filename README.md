@@ -1,12 +1,12 @@
-# 🌟 منصة التواصل الاجتماعي الحديثة
+# ✨ Connecta - منصة التواصل الاجتماعي الحديثة
 
 <div align="center">
 
-![Social Media Platform](https://img.shields.io/badge/منصة-التواصل_الاجتماعي-blue?style=for-the-badge)
+![Connecta](https://img.shields.io/badge/Connecta-منصة_التواصل_الحديثة-blue?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-red?style=for-the-badge)
 
-**منصة تواصل اجتماعي متقدمة مبنية بأحدث التقنيات**
+**Connecta - منصة تواصل اجتماعي متقدمة تربط العالم معاً**
 
 [🚀 العرض المباشر](https://yourapp.com) | [📖 الوثائق](./docs) | [🐛 البلاغات](https://github.com/yourusername/social-media-platform/issues)
 
