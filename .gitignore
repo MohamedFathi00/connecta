@@ -1,0 +1,310 @@
+# =====================================
+# منصة التواصل الاجتماعي - .gitignore
+# =====================================
+
+# 🔐 الملفات الحساسة والبيئة
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+*.key
+*.pem
+secrets/
+
+# 📦 Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 🏗️ ملفات البناء
+build/
+dist/
+.next/
+out/
+.nuxt/
+.vuepress/dist/
+.docusaurus/
+
+# 📊 Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+
+# 🔄 Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# 📁 Directory for instrumented libs
+lib-cov/
+
+# 🗂️ Dependency directories
+jspm_packages/
+
+# 🔧 TypeScript
+*.tsbuildinfo
+.tscache/
+
+# 📱 React Native
+.expo/
+.expo-shared/
+
+# 🎭 Jest
+.jest/
+
+# 🧪 Testing
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# 📦 Package files
+*.tgz
+*.tar.gz
+
+# 🏪 Stores
+.DS_Store
+Thumbs.db
+
+# 💾 Database
+*.db
+*.sqlite
+*.sqlite3
+/database/data/
+/backups/
+
+# 📄 Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 🔄 Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# 📊 Optional npm cache directory
+.npm/
+
+# 🔧 Optional eslint cache
+.eslintcache
+
+# 🎯 Optional stylelint cache
+.stylelintcache
+
+# 📝 Optional REPL history
+.node_repl_history
+
+# 📦 Output of 'npm pack'
+*.tgz
+
+# 🔄 Yarn Integrity file
+.yarn-integrity
+
+# 🌐 dotenv environment variables file
+.env
+.env.test
+.env.local
+.env.production
+
+# 📊 parcel-bundler cache
+.cache/
+.parcel-cache/
+
+# ⚡ Next.js cache
+.next/
+
+# 🏗️ Nuxt.js cache
+.nuxt/
+
+# 🎨 Vuepress cache
+.vuepress/dist/
+
+# 📱 Serverless directories
+.serverless/
+
+# 🔧 FuseBox cache
+.fusebox/
+
+# 🎯 DynamoDB Local files
+.dynamodb/
+
+# 🚀 TernJS port file
+.tern-port
+
+# 🏪 Stores
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 🖼️ Images and Media
+uploads/
+temp/
+*.tmp
+
+# 🔐 Security
+private/
+certificates/
+*.p12
+*.crt
+*.cer
+
+# 📊 IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 🏗️ Build tools
+.sass-cache/
+.grunt/
+.bower_components/
+
+# 📱 Mobile
+*.apk
+*.ipa
+*.app
+
+# 🐳 Docker
+docker-compose.override.yml
+.dockerignore
+
+# ☁️ Cloud
+.vercel/
+.netlify/
+.firebase/
+
+# 🔧 Local configuration
+local.json
+development.json
+
+# 📊 Analytics
+google-services.json
+GoogleService-Info.plist
+
+# 🔄 Git
+*.orig
+
+# 📱 React Native specific
+# React Native CLI
+.react-native/
+
+# Metro
+.metro-health-check*
+
+# Flipper
+flipper-dump.txt
+
+# Bundle artifacts
+*.jsbundle
+
+# CocoaPods
+ios/Pods/
+ios/Podfile.lock
+
+# Android
+android/app/build/
+android/.gradle/
+android/gradle.properties.local
+
+# 🎨 Storybook
+storybook-static/
+
+# 📊 Lighthouse
+lighthouse-report.html
+
+# 🧪 End-to-end tests
+e2e/videos/
+e2e/screenshots/
+
+# 🏪 macOS
+.AppleDouble
+.LSOverride
+Icon?
+
+# 🪟 Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# 🐧 Linux
+*~
+
+# 📊 Temporary folders
+tmp/
+temp/
+
+# 🔧 Editor backup files
+*.bak
+*.backup
+*.old
+
+# 📊 Profiling
+*.cpuprofile
+*.heapprofile
+
+# 🎯 Custom
+# Add your custom ignore patterns here
+
+# 🎬 Media files (large)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+
+# 🎵 Audio files (large)
+*.mp3
+*.wav
+*.ogg
+*.m4a
+
+# 🖼️ Large images
+*.psd
+*.ai
+*.sketch
+
+# 📦 Archives
+*.zip
+*.rar
+*.7z
+*.tar
+
+# 💾 Database dumps
+*.sql
+*.dump
+
+# 🔄 Cache
+.cache/
+cache/
+
+# 📊 Reports
+reports/
+*.report
+
+# 🎯 Local development
+local/
+dev/
+
+# 🔐 Credentials
+credentials/
+config/local.js
+config/production.js
+
+# =====================================
+# نهاية .gitignore
+# =====================================

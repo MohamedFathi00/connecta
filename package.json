@@ -1,0 +1,140 @@
+{
+  "name": "social-media-platform",
+  "version": "1.0.0",
+  "description": "🌟 منصة تواصل اجتماعي متقدمة مبنية بأحدث التقنيات",
+  "keywords": [
+    "social-media",
+    "react",
+    "nodejs",
+    "socket.io",
+    "live-streaming",
+    "real-time-chat",
+    "progressive-web-app",
+    "modern-ui"
+  ],
+  "author": "Social Media Platform Team",
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/social-media-platform#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/social-media-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/social-media-platform/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "install-all": "npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test -- --coverage --watchAll=false",
+    "test:backend": "cd backend && npm test",
+    "test:e2e": "cd frontend && npm run test:e2e",
+    
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:fix": "npm run lint:frontend -- --fix && npm run lint:backend -- --fix",
+    
+    "format": "npm run format:frontend && npm run format:backend",
+    "format:frontend": "cd frontend && npm run format",
+    "format:backend": "cd backend && npm run format",
+    "format:check": "npm run format:frontend -- --check && npm run format:backend -- --check",
+    
+    "docker:build": "docker-compose -f docker-compose.prod.yml build",
+    "docker:up": "docker-compose -f docker-compose.prod.yml up -d",
+    "docker:down": "docker-compose -f docker-compose.prod.yml down",
+    "docker:logs": "docker-compose -f docker-compose.prod.yml logs -f",
+    "docker:dev": "docker-compose -f docker-compose.dev.yml up --build",
+    
+    "deploy": "./deploy.sh",
+    "deploy:staging": "./deploy.sh staging",
+    "deploy:production": "./deploy.sh production",
+    
+    "backup": "./scripts/backup.sh",
+    "update": "./scripts/update.sh",
+    "health-check": "cd backend && node healthcheck.js",
+    
+    "setup:github": "./scripts/github-setup.sh",
+    "setup:ssl": "./scripts/setup-ssl.sh",
+    "setup:monitoring": "./scripts/setup-monitoring.sh",
+    
+    "clean": "npm run clean:frontend && npm run clean:backend && npm run clean:docker",
+    "clean:frontend": "cd frontend && rm -rf build node_modules",
+    "clean:backend": "cd backend && rm -rf dist node_modules",
+    "clean:docker": "docker system prune -f --volumes",
+    
+    "analyze": "npm run analyze:frontend && npm run analyze:backend",
+    "analyze:frontend": "cd frontend && npm run analyze",
+    "analyze:backend": "cd backend && npm run analyze",
+    
+    "docs:build": "npm run docs:api && npm run docs:frontend",
+    "docs:api": "cd backend && npm run docs",
+    "docs:frontend": "cd frontend && npm run docs",
+    "docs:serve": "cd docs && python3 -m http.server 8080",
+    
+    "security:audit": "npm audit && cd frontend && npm audit && cd ../backend && npm audit",
+    "security:fix": "npm audit fix && cd frontend && npm audit fix && cd ../backend && npm audit fix",
+    
+    "precommit": "npm run lint && npm run test && npm run security:audit",
+    "prepare": "husky install",
+    
+    "start": "npm run docker:up",
+    "stop": "npm run docker:down",
+    "restart": "npm run stop && npm run start",
+    "status": "docker-compose -f docker-compose.prod.yml ps"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "frontend/**/*.{js,jsx,ts,tsx}": [
+      "cd frontend && npm run lint:fix",
+      "cd frontend && npm run format"
+    ],
+    "backend/**/*.{js,ts}": [
+      "cd backend && npm run lint:fix",
+      "cd backend && npm run format"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "volta": {
+    "node": "18.19.0",
+    "npm": "10.2.3"
+  }
+}
