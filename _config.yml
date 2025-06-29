@@ -1,0 +1,41 @@
+title: "Connecta - Modern Social Media Platform"
+description: "✨ Connecta - منصة تواصل اجتماعي متقدمة تربط العالم معاً"
+url: "https://mohamedfathi00.github.io"
+baseurl: "/connecta"
+
+# GitHub Pages settings
+plugins:
+  - jekyll-relative-links
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Include files
+include:
+  - "*.html"
+  - "*.md"
+  - "assets/"
+  - "frontend/"
+  - "backend/"
+
+# Exclude files from processing
+exclude:
+  - node_modules/
+  - package*.json
+  - docker-compose.yml
+  - Dockerfile
+  - "*.log"
+  - .git/
+  - .github/
+  - README.md
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Social media
+github_username: MohamedFathi00
+repository: MohamedFathi00/connecta
+
+# SEO
+lang: ar
+author: Connecta Team

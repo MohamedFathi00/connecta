@@ -28,23 +28,13 @@ jobs:
       with:
         node-version: '18'
         
-    - name: Install dependencies
-      working-directory: ./frontend
-      run: |
-        npm install
-        
-    - name: Build application
-      working-directory: ./frontend
-      run: |
-        npm run build
-        
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './frontend/dist'
+        path: './'
 
   deploy:
     environment:
